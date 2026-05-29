@@ -20,3 +20,7 @@ moe_config:
 # long-context stability
 enable_attention_dp: false
 disable_overlap_scheduler: true
+
+# Required for /metrics to expose speculative-decoding iter stats
+# (accepted_draft_tokens / total_draft_tokens). PyTorch backend: beta.
+enable_iter_perf_stats: true
