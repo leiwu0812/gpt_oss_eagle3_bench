@@ -6,12 +6,23 @@ MODEL=/config/models/gpt-oss-120b
 DATASET=/workspace/bench/synthetic_512_512.jsonl
 REPORT=/workspace/bench/trtllm_bench_report.json
 
-python -m tensorrt_llm.bench.benchmark.dataset \
-  --tokenizer ${MODEL} \
-  --num-requests 1000 \
-  --input-mean 512 --input-stdev 0 \
-  --output-mean 512 --output-stdev 0 \
-  --output ${DATASET}
+# Generate a 1000-request synthetic dataset (input=512 tok, output=512 tok)
+# using the base model's tokenizer. Tokenizer-based generation is more robust
+# than relying on the in-tree dataset module, whose path/CLI moves between
+# TRT-LLM releases (e.g. tensorrt_llm.serve.scripts.benchmark_dataset in
+# 1.1.0rc2 vs tensorrt_llm.bench.benchmark.dataset in older builds).
+python3 - <<PY
+import json, random
+from transformers import AutoTokenizer
+tok = AutoTokenizer.from_pretrained("${MODEL}", trust_remote_code=True)
+vocab = tok.vocab_size
+random.seed(0)
+with open("${DATASET}", "w") as f:
+    for i in range(1000):
+        ids = [random.randint(10, vocab - 100) for _ in range(512)]
+        f.write(json.dumps({"task_id": i, "input_ids": ids, "output_tokens": 512}) + "\n")
+print("wrote", "${DATASET}")
+PY
 
 trtllm-bench --model openai/gpt-oss-120b --model_path ${MODEL} \
   throughput \
