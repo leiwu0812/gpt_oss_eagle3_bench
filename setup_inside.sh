@@ -2,8 +2,12 @@
 # Run INSIDE the TRT-LLM container, first time only.
 set -euo pipefail
 
-pip install -q -U "huggingface_hub[cli,hf_transfer]" aiohttp
-export HF_HUB_ENABLE_HF_TRANSFER=1
+# Pin huggingface_hub < 1.0 because the TRT-LLM container's transformers
+# requires huggingface-hub>=0.34,<1.0. A bare `-U` would pull 1.x and break
+# `import tensorrt_llm`. Xet replaces the deprecated hf_transfer extra.
+pip install -q "huggingface_hub[cli]>=0.34,<1.0" hf_transfer aiohttp requests
+export HF_XET_HIGH_PERFORMANCE=1
+unset HF_HUB_ENABLE_HF_TRANSFER || true
 
 # If gated: huggingface-cli login --token "$HF_TOKEN"
 

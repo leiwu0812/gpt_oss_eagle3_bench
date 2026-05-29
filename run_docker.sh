@@ -14,7 +14,7 @@ docker run --rm -it \
   --ipc=host --ulimit stack=67108864 --ulimit memlock=-1 \
   --gpus all --shm-size=32g \
   -p 8000:8000 \
-  -e HF_HUB_ENABLE_HF_TRANSFER=1 \
+  -e HF_XET_HIGH_PERFORMANCE=1 \
   -v "${MODELS_DIR}":/config/models:rw \
   -v "${WORK_DIR}":/workspace/bench:rw \
   nvcr.io/nvidia/tensorrt-llm/release:${TRTLLM_TAG} \
