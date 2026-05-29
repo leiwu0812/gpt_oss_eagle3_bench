@@ -1,0 +1,123 @@
+{
+    "engine": {
+        "model": "openai/gpt-oss-120b",
+        "model_path": "/config/models/gpt-oss-120b",
+        "engine_dir": "None",
+        "version": "1.1.0rc2",
+        "backend": "Pytorch",
+        "dtype": "bfloat16",
+        "kv_cache_dtype": null,
+        "quantization": "W4A8_MXFP4_MXFP8"
+    },
+    "world_info": {
+        "tp_size": 8,
+        "pp_size": 1,
+        "ep_size": 4,
+        "world_size": 8,
+        "max_batch_size": 10,
+        "max_num_tokens": 8192,
+        "scheduling_policy": "GUARANTEED_NO_EVICT",
+        "kv_cache_percentage": 0.8,
+        "issue_rate": 34693975000000.0
+    },
+    "request_info": {
+        "num_requests": 1000,
+        "avg_num_concurrent_requests": 504.9831724789833,
+        "avg_input_length": 512.0,
+        "avg_output_length": 512.0
+    },
+    "performance": {
+        "total_latency_ms": 135775.587844,
+        "avg_request_latency_ms": 68564.387094662,
+        "request_throughput_req_s": 7.365094240276497,
+        "system_output_throughput_tok_s": 3770.9282510215667,
+        "system_total_throughput_tok_s": 7541.856502043133,
+        "output_throughput_per_user_tok_s": 19.42894954982338,
+        "output_throughput_per_gpu_tok_s": 471.36603137769583,
+        "request_latency_percentiles_ms": {
+            "p50": 68816.111396,
+            "p90": 122305.82136799999,
+            "p95": 128819.911534,
+            "p99": 134567.875879,
+            "minimum": 1017.165258,
+            "maximum": 135740.990747,
+            "average": 68564.387094662
+        }
+    },
+    "decoding_stats": {
+        "mode": "Eagle",
+        "num_draft_tokens_percentiles": {
+            "p50": 645.0,
+            "p90": 924.0,
+            "p95": 1002.0,
+            "p99": 1131.0,
+            "minimum": 441.0,
+            "maximum": 1248.0,
+            "average": 688.722
+        },
+        "num_accepted_draft_tokens_percentiles": {
+            "p50": 297.0,
+            "p90": 346.0,
+            "p95": 352.0,
+            "p99": 359.0,
+            "minimum": 96.0,
+            "maximum": 365.0,
+            "average": 282.426
+        },
+        "draft_acceptance_rate_percentiles": {
+            "p50": 0.4604651162790698,
+            "p90": 0.6947791164658634,
+            "p95": 0.7333333333333333,
+            "p99": 0.7821350762527233,
+            "minimum": 0.07692307692307693,
+            "maximum": 0.8276643990929705,
+            "average": 0.45273336553452687
+        },
+        "acceptance_length_percentiles": {
+            "p50": 2.3813953488372093,
+            "p90": 3.0843373493975905,
+            "p95": 3.2,
+            "p99": 3.34640522875817,
+            "minimum": 1.2307692307692308,
+            "maximum": 3.4829931972789114,
+            "average": 2.3582000966035808
+        }
+    },
+    "dataset": {
+        "isl_stats": {
+            "p50": 512.0,
+            "p90": 512.0,
+            "p95": 512.0,
+            "p99": 512.0,
+            "minimum": 512.0,
+            "maximum": 512.0,
+            "average": 512.0
+        },
+        "osl_stats": {
+            "p50": 512.0,
+            "p90": 512.0,
+            "p95": 512.0,
+            "p99": 512.0,
+            "minimum": 512.0,
+            "maximum": 512.0,
+            "average": 512.0
+        },
+        "seq_len_stats": {
+            "p50": 1024.0,
+            "p90": 1024.0,
+            "p95": 1024.0,
+            "p99": 1024.0,
+            "minimum": 1024.0,
+            "maximum": 1024.0,
+            "average": 1024.0
+        },
+        "num_requests": 1000,
+        "dataset_path": "/workspace/bench/synthetic_512_512.jsonl",
+        "max_isl": 512,
+        "max_osl": 512,
+        "max_sequence_length": 1024,
+        "avg_isl": 512,
+        "avg_osl": 512,
+        "avg_sequence_length": 1024
+    }
+}

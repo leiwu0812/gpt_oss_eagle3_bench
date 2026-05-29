@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "max_draft_len": 3,
+    "formula": "accept_rate = (tok/step - 1) / max_draft_len"
+  },
+  "coding": {
+    "n": 10,
+    "tokens_per_step": 2.542924037460978,
+    "acceptance_rate": 0.5143080124869926,
+    "avg_completion_tokens": 977.5,
+    "n_avg_samples": 0,
+    "n_gen_iters": 3844
+  },
+  "extraction": {
+    "n": 10,
+    "tokens_per_step": 2.241199478487614,
+    "acceptance_rate": 0.4137331594958713,
+    "avg_completion_tokens": 171.9,
+    "n_avg_samples": 0,
+    "n_gen_iters": 767
+  },
+  "humanities": {
+    "n": 10,
+    "tokens_per_step": 2.0276752767527677,
+    "acceptance_rate": 0.3425584255842559,
+    "avg_completion_tokens": 989.1,
+    "n_avg_samples": 0,
+    "n_gen_iters": 4878
+  },
+  "math": {
+    "n": 10,
+    "tokens_per_step": 2.871212121212121,
+    "acceptance_rate": 0.6237373737373737,
+    "avg_completion_tokens": 227.4,
+    "n_avg_samples": 0,
+    "n_gen_iters": 792
+  },
+  "reasoning": {
+    "n": 10,
+    "tokens_per_step": 2.187803187803188,
+    "acceptance_rate": 0.39593439593439594,
+    "avg_completion_tokens": 315.7,
+    "n_avg_samples": 0,
+    "n_gen_iters": 1443
+  },
+  "roleplay": {
+    "n": 10,
+    "tokens_per_step": 2.079946996466431,
+    "acceptance_rate": 0.3599823321554771,
+    "avg_completion_tokens": 470.9,
+    "n_avg_samples": 0,
+    "n_gen_iters": 2264
+  },
+  "stem": {
+    "n": 10,
+    "tokens_per_step": 2.1900067219359176,
+    "acceptance_rate": 0.3966689073119725,
+    "avg_completion_tokens": 977.4,
+    "n_avg_samples": 0,
+    "n_gen_iters": 4463
+  },
+  "writing": {
+    "n": 10,
+    "tokens_per_step": 1.8945199835187474,
+    "acceptance_rate": 0.29817332783958245,
+    "avg_completion_tokens": 459.8,
+    "n_avg_samples": 0,
+    "n_gen_iters": 2427
+  }
+}

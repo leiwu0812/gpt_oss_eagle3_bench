@@ -1,0 +1,563 @@
+[2026-05-29 01:59:08] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:08] INFO config.py:66: Polars version 1.25.2 available.
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+2026-05-29 01:59:09,888 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+[05/29/2026-01:59:10] [TRT-LLM] [W] Overriding speculative_config 
+[05/29/2026-01:59:10] [TRT-LLM] [W] Overriding moe_config 
+[05/29/2026-01:59:10] [TRT-LLM] [I] Using LLM with PyTorch backend
+[05/29/2026-01:59:10] [TRT-LLM] [I] Set nccl_plugin to None.
+[05/29/2026-01:59:10] [TRT-LLM] [I] neither checkpoint_format nor checkpoint_loader were provided, checkpoint_format will be set to HF.
+[05/29/2026-01:59:10] [TRT-LLM] [I] start MpiSession with 8 workers
+[05/29/2026-01:59:10] [TRT-LLM] [I] Found quantization_config field in /config/models/gpt-oss-120b/config.json, pre-quantized checkpoint is used.
+[33;20mrank 0 using MpiPoolSession to spawn MPI processes
+[0m/config/models/gpt-oss-120b
+[05/29/2026-01:59:11] [TRT-LLM] [I] Generating a new HMAC key for server proxy_request_queue
+[05/29/2026-01:59:11] [TRT-LLM] [I] Generating a new HMAC key for server worker_init_status_queue
+[05/29/2026-01:59:11] [TRT-LLM] [I] Generating a new HMAC key for server proxy_result_queue
+[05/29/2026-01:59:11] [TRT-LLM] [I] Generating a new HMAC key for server proxy_stats_queue
+[05/29/2026-01:59:11] [TRT-LLM] [I] Generating a new HMAC key for server proxy_kv_cache_events_queue
+[2026-05-29 01:59:20] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:20] INFO config.py:66: Polars version 1.25.2 available.
+[2026-05-29 01:59:20] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:20] INFO config.py:66: Polars version 1.25.2 available.
+[2026-05-29 01:59:20] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:20] INFO config.py:66: Polars version 1.25.2 available.
+[2026-05-29 01:59:20] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:20] INFO config.py:66: Polars version 1.25.2 available.
+[2026-05-29 01:59:20] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:20] INFO config.py:66: Polars version 1.25.2 available.
+[2026-05-29 01:59:21] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:21] INFO config.py:66: Polars version 1.25.2 available.
+[2026-05-29 01:59:21] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:21] INFO config.py:66: Polars version 1.25.2 available.
+[2026-05-29 01:59:21] INFO config.py:54: PyTorch version 2.8.0a0+5228986c39.nv25.6 available.
+[2026-05-29 01:59:21] INFO config.py:66: Polars version 1.25.2 available.
+Multiple distributions found for package optimum. Picked distribution: optimum
+Multiple distributions found for package optimum. Picked distribution: optimum
+Multiple distributions found for package optimum. Picked distribution: optimum
+Multiple distributions found for package optimum. Picked distribution: optimum
+Multiple distributions found for package optimum. Picked distribution: optimum
+Multiple distributions found for package optimum. Picked distribution: optimum
+Multiple distributions found for package optimum. Picked distribution: optimum
+Multiple distributions found for package optimum. Picked distribution: optimum
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+2026-05-29 01:59:22,883 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+2026-05-29 01:59:23,176 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+2026-05-29 01:59:23,277 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+/usr/local/lib/python3.12/dist-packages/modelopt/torch/__init__.py:36: UserWarning: transformers version 4.55.0 is incompatible with nvidia-modelopt and may cause issues. Please install recommended version with `pip install nvidia-modelopt[hf]` if working with HF models.
+  _warnings.warn(
+2026-05-29 01:59:23,499 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+2026-05-29 01:59:23,527 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+2026-05-29 01:59:23,566 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+2026-05-29 01:59:23,567 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+2026-05-29 01:59:23,607 - INFO - flashinfer.jit: Prebuilt kernels not found, using JIT backend
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+[TensorRT-LLM] TensorRT-LLM version: 1.1.0rc2
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/pydantic/_internal/_fields.py:198: UserWarning: Field name "schema" in "ResponseFormat" shadows an attribute in parent "OpenAIBaseModel"
+  warnings.warn(
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[TensorRT-LLM][INFO] Refreshed the MPI local session
+[05/29/2026-01:59:26] [TRT-LLM] [RANK 0] [I] PyTorchConfig(extra_resource_managers={}, use_cuda_graph=True, cuda_graph_batch_sizes=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], cuda_graph_max_batch_size=10, cuda_graph_padding_enabled=False, disable_overlap_scheduler=True, moe_max_num_tokens=None, moe_load_balancer=None, attention_dp_enable_balance=False, attention_dp_time_out_iters=50, attention_dp_batching_wait_iters=10, batch_wait_timeout_ms=0, attn_backend='TRTLLM', moe_backend='TRTLLM', moe_disable_finalize_fusion=False, enable_mixed_sampler=False, sampler_type='TorchSampler', kv_cache_dtype='auto', mamba_ssm_cache_dtype='auto', enable_iter_perf_stats=True, enable_iter_req_stats=False, print_iter_log=False, torch_compile_enabled=False, torch_compile_fullgraph=True, torch_compile_inductor_enabled=False, torch_compile_piecewise_cuda_graph=False, torch_compile_piecewise_cuda_graph_num_tokens=None, torch_compile_enable_userbuffers=True, torch_compile_max_num_streams=1, enable_autotuner=True, enable_layerwise_nvtx_marker=False, load_format=<LoadFormat.AUTO: 0>, enable_min_latency=False, allreduce_strategy='AUTO', stream_interval=1, force_dynamic_quantization=False, mm_encoder_only=False, _limit_torch_cuda_mem_fraction=True)
+[05/29/2026-01:59:27] [TRT-LLM] [RANK 0] [I] ATTENTION RUNTIME FEATURES:  AttentionRuntimeFeatures(chunked_prefill=False, cache_reuse=False, has_speculative_draft_tokens=False, chunk_size=8192)
+/config/models/gpt-oss-120b
+/config/models/gpt-oss-120b
+/config/models/gpt-oss-120b
+/config/models/gpt-oss-120b
+/config/models/gpt-oss-120b
+/config/models/gpt-oss-120b
+[05/29/2026-01:59:27] [TRT-LLM] [RANK 0] [I] Validating KV Cache config against kv_cache_dtype="auto"
+[05/29/2026-01:59:27] [TRT-LLM] [RANK 0] [I] KV cache quantization set to "auto". Using checkpoint KV quantization.
+/config/models/gpt-oss-120b
+/config/models/gpt-oss-120b
+/config/models/eagle/
+/config/models/eagle/
+/config/models/eagle/
+/config/models/eagle/
+/config/models/eagle/
+/config/models/eagle/
+/config/models/eagle/
+/config/models/eagle/
+[05/29/2026-01:59:27] [TRT-LLM] [RANK 0] [I] Use 8.84 GB for model weights.
+[05/29/2026-01:59:27] [TRT-LLM] [RANK 0] [I] Prefetching 60.77GB checkpoint files.
+[05/29/2026-01:59:27] [TRT-LLM] [RANK 0] [I] Prefetching /config/models/gpt-oss-120b/model-00011-of-00014.safetensors to memory...
+[05/29/2026-01:59:27] [TRT-LLM] [RANK 0] [I] Prefetching /config/models/gpt-oss-120b/model-00006-of-00014.safetensors to memory...
+[05/29/2026-01:59:29] [TRT-LLM] [RANK 0] [I] Finished prefetching /config/models/gpt-oss-120b/model-00011-of-00014.safetensors.
+[05/29/2026-01:59:29] [TRT-LLM] [RANK 0] [I] Finished prefetching /config/models/gpt-oss-120b/model-00006-of-00014.safetensors.
+Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/15 [00:00<?, ?it/s]Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 425.17it/s]
+Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 422.25it/s]
+Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 417.10it/s]
+Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 411.95it/s]
+Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 407.01it/s]
+Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 406.29it/s]
+Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 400.18it/s]
+Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading safetensors weights in parallel: 100%|██████████| 15/15 [00:00<00:00, 396.93it/s]
+Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading weights:   0%|          | 0/830 [00:00<?, ?it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:12, 66.22it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:12, 63.97it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:13, 61.93it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:13, 61.44it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:13, 58.99it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:14, 55.88it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:14, 54.61it/s]Loading weights:   3%|▎         | 24/830 [00:00<00:15, 53.52it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:11, 68.52it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:11, 66.48it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:12, 64.12it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:12, 60.83it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:13, 60.28it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:13, 59.88it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:13, 58.16it/s]Loading weights:   6%|▌         | 46/830 [00:00<00:14, 55.29it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:11, 66.74it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:11, 66.11it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:11, 66.10it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:12, 60.60it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:12, 61.46it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:12, 59.90it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:12, 60.24it/s]Loading weights:   8%|▊         | 68/830 [00:01<00:13, 54.62it/s]Loading weights:  11%|█         | 90/830 [00:01<00:11, 66.97it/s]Loading weights:  11%|█         | 90/830 [00:01<00:11, 67.16it/s]Loading weights:  11%|█         | 90/830 [00:01<00:11, 63.69it/s]Loading weights:  11%|█         | 90/830 [00:01<00:11, 61.85it/s]Loading weights:  11%|█         | 90/830 [00:01<00:12, 60.59it/s]Loading weights:  11%|█         | 90/830 [00:01<00:12, 59.61it/s]Loading weights:  11%|█         | 90/830 [00:01<00:12, 58.00it/s]Loading weights:  11%|█         | 90/830 [00:01<00:13, 55.08it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:10, 69.09it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:10, 69.21it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:11, 63.19it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:11, 63.76it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:11, 63.11it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:11, 60.39it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:12, 57.98it/s]Loading weights:  16%|█▌        | 134/830 [00:01<00:10, 68.69it/s]Loading weights:  16%|█▌        | 134/830 [00:01<00:10, 68.54it/s]Loading weights:  13%|█▎        | 112/830 [00:01<00:12, 56.96it/s]Loading weights:  16%|█▌        | 134/830 [00:02<00:11, 62.12it/s]Loading weights:  16%|█▌        | 134/830 [00:02<00:11, 63.25it/s]Loading weights:  16%|█▌        | 134/830 [00:02<00:11, 63.26it/s]Loading weights:  16%|█▌        | 134/830 [00:02<00:11, 59.24it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:09, 68.70it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:09, 68.75it/s]Loading weights:  16%|█▌        | 134/830 [00:02<00:12, 57.16it/s]Loading weights:  16%|█▌        | 134/830 [00:02<00:12, 57.38it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:10, 64.78it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:10, 63.33it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:10, 63.15it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:11, 61.25it/s]Loading weights:  21%|██▏       | 178/830 [00:02<00:09, 68.28it/s]Loading weights:  21%|██▏       | 178/830 [00:02<00:09, 68.36it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:11, 59.24it/s]Loading weights:  19%|█▉        | 156/830 [00:02<00:11, 56.67it/s]Loading weights:  21%|██▏       | 178/830 [00:02<00:10, 64.22it/s]Loading weights:  21%|██▏       | 178/830 [00:02<00:10, 62.98it/s]Loading weights:  21%|██▏       | 178/830 [00:02<00:10, 62.80it/s]Loading weights:  21%|██▏       | 178/830 [00:02<00:10, 60.19it/s]Loading weights:  24%|██▍       | 200/830 [00:02<00:09, 66.06it/s]Loading weights:  24%|██▍       | 200/830 [00:02<00:09, 66.68it/s]Loading weights:  21%|██▏       | 178/830 [00:03<00:11, 59.14it/s]Loading weights:  24%|██▍       | 200/830 [00:03<00:09, 63.61it/s]Loading weights:  21%|██▏       | 178/830 [00:03<00:11, 56.26it/s]Loading weights:  24%|██▍       | 200/830 [00:03<00:10, 62.40it/s]Loading weights:  24%|██▍       | 200/830 [00:03<00:10, 62.03it/s]Loading weights:  27%|██▋       | 222/830 [00:03<00:09, 65.51it/s]Loading weights:  27%|██▋       | 222/830 [00:03<00:09, 64.99it/s]Loading weights:  24%|██▍       | 200/830 [00:03<00:10, 59.82it/s]Loading weights:  24%|██▍       | 200/830 [00:03<00:10, 58.30it/s]Loading weights:  27%|██▋       | 222/830 [00:03<00:09, 63.87it/s]Loading weights:  24%|██▍       | 200/830 [00:03<00:11, 55.84it/s]Loading weights:  27%|██▋       | 222/830 [00:03<00:09, 60.99it/s]Loading weights:  29%|██▉       | 244/830 [00:03<00:08, 68.85it/s]Loading weights:  29%|██▉       | 244/830 [00:03<00:08, 68.44it/s]Loading weights:  27%|██▋       | 222/830 [00:03<00:10, 60.67it/s]Loading weights:  27%|██▋       | 222/830 [00:03<00:10, 60.42it/s]Loading weights:  27%|██▋       | 222/830 [00:03<00:10, 58.49it/s]Loading weights:  29%|██▉       | 244/830 [00:03<00:09, 64.37it/s]Loading weights:  29%|██▉       | 244/830 [00:03<00:09, 62.80it/s]Loading weights:  32%|███▏      | 266/830 [00:03<00:08, 69.31it/s]Loading weights:  32%|███▏      | 266/830 [00:03<00:08, 69.04it/s]Loading weights:  29%|██▉       | 244/830 [00:03<00:09, 62.64it/s]Loading weights:  27%|██▋       | 222/830 [00:04<00:11, 54.27it/s]Loading weights:  29%|██▉       | 244/830 [00:04<00:09, 60.78it/s]Loading weights:  32%|███▏      | 266/830 [00:04<00:08, 63.24it/s]Loading weights:  29%|██▉       | 244/830 [00:04<00:10, 58.27it/s]Loading weights:  35%|███▍      | 288/830 [00:04<00:07, 70.02it/s]Loading weights:  35%|███▍      | 288/830 [00:04<00:07, 69.82it/s]Loading weights:  32%|███▏      | 266/830 [00:04<00:08, 63.39it/s]Loading weights:  32%|███▏      | 266/830 [00:04<00:08, 62.72it/s]Loading weights:  29%|██▉       | 244/830 [00:04<00:10, 56.45it/s]Loading weights:  32%|███▏      | 266/830 [00:04<00:09, 59.75it/s]Loading weights:  35%|███▍      | 288/830 [00:04<00:08, 64.49it/s]Loading weights:  37%|███▋      | 310/830 [00:04<00:07, 69.26it/s]Loading weights:  37%|███▋      | 310/830 [00:04<00:07, 69.03it/s]Loading weights:  32%|███▏      | 266/830 [00:04<00:09, 57.15it/s]Loading weights:  35%|███▍      | 288/830 [00:04<00:08, 63.47it/s]Loading weights:  35%|███▍      | 288/830 [00:04<00:08, 62.71it/s]Loading weights:  32%|███▏      | 266/830 [00:04<00:09, 56.73it/s]Loading weights:  35%|███▍      | 288/830 [00:04<00:08, 60.75it/s]Loading weights:  37%|███▋      | 310/830 [00:04<00:08, 64.86it/s]Loading weights:  40%|████      | 332/830 [00:04<00:07, 67.96it/s]Loading weights:  40%|████      | 332/830 [00:04<00:07, 67.89it/s]Loading weights:  37%|███▋      | 310/830 [00:04<00:08, 63.00it/s]Loading weights:  35%|███▍      | 288/830 [00:04<00:09, 58.13it/s]Loading weights:  37%|███▋      | 310/830 [00:04<00:08, 62.03it/s]Loading weights:  37%|███▋      | 310/830 [00:05<00:08, 61.13it/s]Loading weights:  35%|███▍      | 288/830 [00:05<00:09, 55.94it/s]Loading weights:  40%|████      | 332/830 [00:05<00:07, 64.29it/s]Loading weights:  43%|████▎     | 354/830 [00:05<00:07, 66.26it/s]Loading weights:  43%|████▎     | 354/830 [00:05<00:07, 66.28it/s]Loading weights:  40%|████      | 332/830 [00:05<00:07, 62.41it/s]Loading weights:  37%|███▋      | 310/830 [00:05<00:08, 58.08it/s]Loading weights:  40%|████      | 332/830 [00:05<00:08, 61.53it/s]Loading weights:  40%|████      | 332/830 [00:05<00:08, 60.15it/s]Loading weights:  43%|████▎     | 354/830 [00:05<00:07, 63.76it/s]Loading weights:  45%|████▌     | 376/830 [00:05<00:06, 67.47it/s]Loading weights:  45%|████▌     | 376/830 [00:05<00:06, 67.42it/s]Loading weights:  37%|███▋      | 310/830 [00:05<00:09, 54.75it/s]Loading weights:  43%|████▎     | 354/830 [00:05<00:07, 61.17it/s]Loading weights:  43%|████▎     | 354/830 [00:05<00:07, 60.69it/s]Loading weights:  40%|████      | 332/830 [00:05<00:08, 56.96it/s]Loading weights:  48%|████▊     | 398/830 [00:05<00:06, 68.88it/s]Loading weights:  48%|████▊     | 398/830 [00:05<00:06, 68.87it/s]Loading weights:  43%|████▎     | 354/830 [00:05<00:07, 59.99it/s]Loading weights:  45%|████▌     | 376/830 [00:05<00:07, 62.91it/s]Loading weights:  40%|████      | 332/830 [00:05<00:09, 54.11it/s]Loading weights:  45%|████▌     | 376/830 [00:06<00:07, 61.75it/s]Loading weights:  45%|████▌     | 376/830 [00:06<00:07, 61.70it/s]Loading weights:  43%|████▎     | 354/830 [00:06<00:08, 56.84it/s]Loading weights:  51%|█████     | 420/830 [00:06<00:05, 70.12it/s]Loading weights:  51%|█████     | 420/830 [00:06<00:05, 70.09it/s]Loading weights:  48%|████▊     | 398/830 [00:06<00:06, 64.92it/s]Loading weights:  45%|████▌     | 376/830 [00:06<00:07, 59.17it/s]Loading weights:  48%|████▊     | 398/830 [00:06<00:06, 62.20it/s]Loading weights:  43%|████▎     | 354/830 [00:06<00:08, 53.23it/s]Loading weights:  48%|████▊     | 398/830 [00:06<00:06, 62.02it/s]Loading weights:  53%|█████▎    | 442/830 [00:06<00:05, 70.78it/s]Loading weights:  53%|█████▎    | 442/830 [00:06<00:05, 70.77it/s]Loading weights:  51%|█████     | 420/830 [00:06<00:06, 66.65it/s]Loading weights:  45%|████▌     | 376/830 [00:06<00:08, 55.84it/s]Loading weights:  48%|████▊     | 398/830 [00:06<00:07, 61.19it/s]Loading weights:  51%|█████     | 420/830 [00:06<00:06, 62.43it/s]Loading weights:  51%|█████     | 420/830 [00:06<00:06, 62.01it/s]Loading weights:  56%|█████▌    | 464/830 [00:06<00:05, 69.11it/s]Loading weights:  56%|█████▌    | 464/830 [00:06<00:05, 69.12it/s]Loading weights:  45%|████▌     | 376/830 [00:06<00:08, 54.02it/s]Loading weights:  53%|█████▎    | 442/830 [00:06<00:05, 67.99it/s]Loading weights:  48%|████▊     | 398/830 [00:06<00:07, 57.68it/s]Loading weights:  51%|█████     | 420/830 [00:06<00:06, 62.68it/s]Loading weights:  53%|█████▎    | 442/830 [00:07<00:06, 62.67it/s]Loading weights:  59%|█████▊    | 486/830 [00:07<00:04, 69.58it/s]Loading weights:  59%|█████▊    | 486/830 [00:07<00:04, 69.54it/s]Loading weights:  53%|█████▎    | 442/830 [00:07<00:06, 62.24it/s]Loading weights:  56%|█████▌    | 464/830 [00:07<00:05, 65.73it/s]Loading weights:  48%|████▊     | 398/830 [00:07<00:07, 54.34it/s]Loading weights:  51%|█████     | 420/830 [00:07<00:06, 59.37it/s]Loading weights:  53%|█████▎    | 442/830 [00:07<00:06, 63.85it/s]Loading weights:  56%|█████▌    | 464/830 [00:07<00:05, 62.17it/s]Loading weights:  61%|██████    | 508/830 [00:07<00:04, 67.99it/s]Loading weights:  61%|██████    | 508/830 [00:07<00:04, 67.97it/s]Loading weights:  56%|█████▌    | 464/830 [00:07<00:05, 61.92it/s]Loading weights:  59%|█████▊    | 486/830 [00:07<00:05, 67.00it/s]Loading weights:  53%|█████▎    | 442/830 [00:07<00:06, 60.56it/s]Loading weights:  51%|█████     | 420/830 [00:07<00:07, 54.65it/s]Loading weights:  56%|█████▌    | 464/830 [00:07<00:05, 62.26it/s]Loading weights:  64%|██████▍   | 530/830 [00:07<00:04, 68.63it/s]Loading weights:  64%|██████▍   | 530/830 [00:07<00:04, 68.64it/s]Loading weights:  59%|█████▊    | 486/830 [00:07<00:05, 62.60it/s]Loading weights:  59%|█████▊    | 486/830 [00:07<00:05, 61.90it/s]Loading weights:  61%|██████    | 508/830 [00:07<00:04, 66.29it/s]Loading weights:  59%|█████▊    | 486/830 [00:07<00:05, 62.46it/s]Loading weights:  56%|█████▌    | 464/830 [00:07<00:06, 58.35it/s]Loading weights:  53%|█████▎    | 442/830 [00:08<00:07, 54.82it/s]Loading weights:  67%|██████▋   | 552/830 [00:08<00:03, 70.97it/s]Loading weights:  67%|██████▋   | 552/830 [00:08<00:03, 70.95it/s]Loading weights:  61%|██████    | 508/830 [00:08<00:05, 61.77it/s]Loading weights:  61%|██████    | 508/830 [00:08<00:05, 60.77it/s]Loading weights:  64%|██████▍   | 530/830 [00:08<00:04, 63.35it/s]Loading weights:  61%|██████    | 508/830 [00:08<00:05, 62.41it/s]Loading weights:  59%|█████▊    | 486/830 [00:08<00:05, 59.30it/s]Loading weights:  69%|██████▉   | 574/830 [00:08<00:03, 69.41it/s]Loading weights:  69%|██████▉   | 574/830 [00:08<00:03, 69.40it/s]Loading weights:  56%|█████▌    | 464/830 [00:08<00:06, 54.52it/s]Loading weights:  64%|██████▍   | 530/830 [00:08<00:04, 62.20it/s]Loading weights:  64%|██████▍   | 530/830 [00:08<00:04, 60.97it/s]Loading weights:  67%|██████▋   | 552/830 [00:08<00:04, 63.00it/s]Loading weights:  61%|██████    | 508/830 [00:08<00:05, 59.45it/s]Loading weights:  72%|███████▏  | 596/830 [00:08<00:03, 66.74it/s]Loading weights:  72%|███████▏  | 596/830 [00:08<00:03, 66.49it/s]Loading weights:  64%|██████▍   | 530/830 [00:08<00:05, 59.81it/s]Loading weights:  59%|█████▊    | 486/830 [00:08<00:06, 54.70it/s]Loading weights:  67%|██████▋   | 552/830 [00:08<00:04, 63.54it/s]Loading weights:  67%|██████▋   | 552/830 [00:08<00:04, 62.63it/s]Loading weights:  69%|██████▉   | 574/830 [00:08<00:04, 63.47it/s]Loading weights:  74%|███████▍  | 618/830 [00:09<00:03, 67.37it/s]Loading weights:  74%|███████▍  | 618/830 [00:09<00:03, 66.61it/s]Loading weights:  67%|██████▋   | 552/830 [00:09<00:04, 60.41it/s]Loading weights:  64%|██████▍   | 530/830 [00:09<00:05, 57.74it/s]Loading weights:  69%|██████▉   | 574/830 [00:09<00:04, 62.28it/s]Loading weights:  61%|██████    | 508/830 [00:09<00:05, 54.02it/s]Loading weights:  72%|███████▏  | 596/830 [00:09<00:03, 64.09it/s]Loading weights:  69%|██████▉   | 574/830 [00:09<00:04, 61.58it/s]Loading weights:  77%|███████▋  | 640/830 [00:09<00:02, 69.20it/s]Loading weights:  77%|███████▋  | 640/830 [00:09<00:02, 68.55it/s]Loading weights:  69%|██████▉   | 574/830 [00:09<00:04, 60.83it/s]Loading weights:  67%|██████▋   | 552/830 [00:09<00:04, 57.85it/s]Loading weights:  72%|███████▏  | 596/830 [00:09<00:03, 61.14it/s]Loading weights:  74%|███████▍  | 618/830 [00:09<00:03, 65.19it/s]Loading weights:  64%|██████▍   | 530/830 [00:09<00:05, 55.10it/s]Loading weights:  72%|███████▏  | 596/830 [00:09<00:03, 60.78it/s]Loading weights:  80%|███████▉  | 662/830 [00:09<00:02, 69.14it/s]Loading weights:  80%|███████▉  | 662/830 [00:09<00:02, 68.22it/s]Loading weights:  72%|███████▏  | 596/830 [00:09<00:03, 61.39it/s]Loading weights:  69%|██████▉   | 574/830 [00:09<00:04, 58.34it/s]Loading weights:  77%|███████▋  | 640/830 [00:09<00:02, 64.70it/s]Loading weights:  74%|███████▍  | 618/830 [00:09<00:03, 60.96it/s]Loading weights:  67%|██████▋   | 552/830 [00:09<00:04, 57.18it/s]Loading weights:  82%|████████▏ | 684/830 [00:10<00:02, 68.45it/s]Loading weights:  74%|███████▍  | 618/830 [00:10<00:03, 60.98it/s]Loading weights:  82%|████████▏ | 684/830 [00:10<00:02, 67.85it/s]Loading weights:  74%|███████▍  | 618/830 [00:10<00:03, 62.36it/s]Loading weights:  72%|███████▏  | 596/830 [00:10<00:03, 58.62it/s]Loading weights:  80%|███████▉  | 662/830 [00:10<00:02, 66.00it/s]Loading weights:  77%|███████▋  | 640/830 [00:10<00:03, 62.69it/s]Loading weights:  85%|████████▌ | 706/830 [00:10<00:01, 68.75it/s]Loading weights:  85%|████████▌ | 706/830 [00:10<00:01, 68.06it/s]Loading weights:  77%|███████▋  | 640/830 [00:10<00:03, 62.49it/s]Loading weights:  69%|██████▉   | 574/830 [00:10<00:04, 56.01it/s]Loading weights:  77%|███████▋  | 640/830 [00:10<00:03, 61.67it/s]Loading weights:  82%|████████▏ | 684/830 [00:10<00:02, 67.60it/s]Loading weights:  74%|███████▍  | 618/830 [00:10<00:03, 59.58it/s]Loading weights:  80%|███████▉  | 662/830 [00:10<00:02, 62.79it/s]Loading weights:  88%|████████▊ | 728/830 [00:10<00:01, 68.52it/s]Loading weights:  88%|████████▊ | 728/830 [00:10<00:01, 67.99it/s]Loading weights:  80%|███████▉  | 662/830 [00:10<00:02, 62.27it/s]Loading weights:  72%|███████▏  | 596/830 [00:10<00:04, 55.13it/s]Loading weights:  80%|███████▉  | 662/830 [00:10<00:02, 62.19it/s]Loading weights:  85%|████████▌ | 706/830 [00:10<00:01, 68.54it/s]Loading weights:  82%|████████▏ | 684/830 [00:10<00:02, 62.60it/s]Loading weights:  90%|█████████ | 750/830 [00:10<00:01, 67.74it/s]Loading weights:  77%|███████▋  | 640/830 [00:10<00:03, 58.50it/s]Loading weights:  90%|█████████ | 750/830 [00:10<00:01, 67.71it/s]Loading weights:  82%|████████▏ | 684/830 [00:11<00:02, 61.63it/s]Loading weights:  88%|████████▊ | 728/830 [00:11<00:01, 68.79it/s]Loading weights:  74%|███████▍  | 618/830 [00:11<00:03, 54.77it/s]Loading weights:  82%|████████▏ | 684/830 [00:11<00:02, 63.13it/s]Loading weights:  93%|█████████▎| 772/830 [00:11<00:00, 67.77it/s]Loading weights:  85%|████████▌ | 706/830 [00:11<00:01, 62.12it/s]Loading weights:  93%|█████████▎| 772/830 [00:11<00:00, 66.88it/s]Loading weights:  80%|███████▉  | 662/830 [00:11<00:02, 59.19it/s]Loading weights:  85%|████████▌ | 706/830 [00:11<00:02, 61.49it/s]Loading weights:  90%|█████████ | 750/830 [00:11<00:01, 69.24it/s]Loading weights:  85%|████████▌ | 706/830 [00:11<00:01, 63.78it/s]Loading weights:  77%|███████▋  | 640/830 [00:11<00:03, 56.86it/s]Loading weights:  96%|█████████▌| 794/830 [00:11<00:00, 67.88it/s]Loading weights: 100%|██████████| 830/830 [00:11<00:00, 71.37it/s]
+Loading weights:  96%|█████████▌| 794/830 [00:11<00:00, 67.33it/s]Loading weights: 100%|██████████| 830/830 [00:11<00:00, 71.17it/s]
+Loading weights:  88%|████████▊ | 728/830 [00:11<00:01, 61.84it/s][05/29/2026-01:59:41] [TRT-LLM] [RANK 0] [I] Prefetching 0.40GB checkpoint files.
+Loading weights:  82%|████████▏ | 684/830 [00:11<00:02, 60.18it/s][05/29/2026-01:59:41] [TRT-LLM] [RANK 0] [I] Prefetching /config/models/eagle/model.safetensors to memory...
+Loading weights:  88%|████████▊ | 728/830 [00:11<00:01, 61.66it/s]Loading weights:  93%|█████████▎| 772/830 [00:11<00:00, 69.48it/s][05/29/2026-01:59:41] [TRT-LLM] [RANK 0] [I] Finished prefetching /config/models/eagle/model.safetensors.
+Loading weights:  88%|████████▊ | 728/830 [00:11<00:01, 63.73it/s]Loading weights:  80%|███████▉  | 662/830 [00:11<00:02, 56.65it/s]Loading weights:  85%|████████▌ | 706/830 [00:12<00:02, 61.49it/s]Loading weights:  90%|█████████ | 750/830 [00:12<00:01, 61.69it/s]Loading weights:  96%|█████████▌| 794/830 [00:12<00:00, 69.48it/s]Loading weights: 100%|██████████| 830/830 [00:12<00:00, 68.41it/s]
+Loading weights:  90%|█████████ | 750/830 [00:12<00:01, 61.33it/s]Loading weights:  90%|█████████ | 750/830 [00:12<00:01, 64.66it/s]Loading weights:  82%|████████▏ | 684/830 [00:12<00:02, 56.19it/s]Loading weights:  88%|████████▊ | 728/830 [00:12<00:01, 62.62it/s]Loading weights:  93%|█████████▎| 772/830 [00:12<00:00, 61.59it/s]Loading weights:  93%|█████████▎| 772/830 [00:12<00:00, 61.70it/s]Loading weights:  93%|█████████▎| 772/830 [00:12<00:00, 65.32it/s]Loading weights:  90%|█████████ | 750/830 [00:12<00:01, 63.24it/s]Loading weights:  85%|████████▌ | 706/830 [00:12<00:02, 56.31it/s]Loading weights:  96%|█████████▌| 794/830 [00:12<00:00, 61.98it/s]Loading weights: 100%|██████████| 830/830 [00:12<00:00, 65.01it/s]
+Loading weights:  96%|█████████▌| 794/830 [00:12<00:00, 61.52it/s]Loading weights:  96%|█████████▌| 794/830 [00:12<00:00, 66.17it/s]Loading weights: 100%|██████████| 830/830 [00:12<00:00, 64.54it/s]
+Loading weights: 100%|██████████| 830/830 [00:12<00:00, 64.52it/s]
+Loading weights:  93%|█████████▎| 772/830 [00:13<00:00, 63.37it/s]Loading weights:  88%|████████▊ | 728/830 [00:13<00:01, 56.32it/s]Loading weights:  96%|█████████▌| 794/830 [00:13<00:00, 64.26it/s]Loading weights: 100%|██████████| 830/830 [00:13<00:00, 61.93it/s]
+Loading weights:  90%|█████████ | 750/830 [00:13<00:01, 57.00it/s]Loading weights:  93%|█████████▎| 772/830 [00:13<00:01, 57.72it/s]Loading weights:  96%|█████████▌| 794/830 [00:14<00:00, 58.32it/s]Loading weights: 100%|██████████| 830/830 [00:14<00:00, 58.31it/s]
+Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel:   0%|          | 0/1 [00:00<?, ?it/s]Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 819.20it/s]
+Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 830.56it/s]
+Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 814.27it/s]
+Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 772.43it/s]
+Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 768.05it/s]
+Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 730.59it/s]
+Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 713.20it/s]
+Loading safetensors weights in parallel: 100%|██████████| 1/1 [00:00<00:00, 704.21it/s]
+Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s]Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s]Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s]Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s]Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s]Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s]Loading weights concurrently: 100%|██████████| 28/28 [00:00<00:00, 3544.09it/s]
+Model init total -- 16.92s
+Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s]Loading weights concurrently:   0%|          | 0/28 [00:00<?, ?it/s][05/29/2026-01:59:44] [TRT-LLM] [RANK 0] [I] Using Sampler: Eagle3OneModelSampler
+[05/29/2026-01:59:44] [TRT-LLM] [RANK 0] [W] Both free_gpu_memory_fraction and max_tokens are set (to 0.800000011920929 and 8256, respectively). The smaller value will be used.
+Loading weights concurrently:  71%|███████▏  | 20/28 [00:01<00:00, 17.06it/s]Loading weights concurrently:  71%|███████▏  | 20/28 [00:01<00:00, 15.15it/s]Loading weights concurrently:  71%|███████▏  | 20/28 [00:01<00:00, 15.16it/s]Loading weights concurrently:  86%|████████▌ | 24/28 [00:01<00:00, 17.53it/s]Loading weights concurrently: 100%|██████████| 28/28 [00:01<00:00, 20.23it/s]
+Model init total -- 18.23s
+Loading weights concurrently:  71%|███████▏  | 20/28 [00:01<00:00, 14.74it/s]Loading weights concurrently:  71%|███████▏  | 20/28 [00:01<00:00, 15.01it/s]Loading weights concurrently:  71%|███████▏  | 20/28 [00:01<00:00, 15.09it/s]Loading weights concurrently:  71%|███████▏  | 20/28 [00:01<00:00, 14.97it/s]Loading weights concurrently: 100%|██████████| 28/28 [00:01<00:00, 20.50it/s]
+Model init total -- 18.18s
+Loading weights concurrently: 100%|██████████| 28/28 [00:01<00:00, 20.60it/s]
+Model init total -- 18.31s
+Loading weights concurrently: 100%|██████████| 28/28 [00:01<00:00, 19.91it/s]
+Model init total -- 18.43s
+Loading weights concurrently: 100%|██████████| 28/28 [00:01<00:00, 20.21it/s]
+Model init total -- 18.48s
+Loading weights concurrently: 100%|██████████| 28/28 [00:01<00:00, 20.31it/s]
+Loading weights concurrently: 100%|██████████| 28/28 [00:01<00:00, 20.16it/s]
+Model init total -- 18.54s
+Model init total -- 18.38s
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[05/29/2026-01:59:45] [TRT-LLM] [RANK 0] [I] max_seq_len=8197, max_num_requests=10, max_num_tokens=8192, max_batch_size=10
+[05/29/2026-01:59:45] [TRT-LLM] [RANK 0] [I] cache_transceiver is disabled
+[05/29/2026-01:59:45] [TRT-LLM] [RANK 0] [I] [Autotuner] Autotuning process starts ...
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 0.07 GiB for max tokens in paged KV cache (8256).
+[TensorRT-LLM][INFO] Detecting local TP group for rank 1
+[TensorRT-LLM][INFO] Detecting local TP group for rank 2
+[TensorRT-LLM][INFO] Detecting local TP group for rank 6
+[TensorRT-LLM][INFO] Detecting local TP group for rank 4
+[TensorRT-LLM][INFO] Detecting local TP group for rank 0
+[TensorRT-LLM][INFO] Detecting local TP group for rank 5
+[TensorRT-LLM][INFO] Detecting local TP group for rank 7
+[TensorRT-LLM][INFO] Detecting local TP group for rank 3
+[TensorRT-LLM][INFO] TP group is intra-node for rank 0
+[TensorRT-LLM][INFO] TP group is intra-node for rank 4
+[TensorRT-LLM][INFO] TP group is intra-node for rank 1
+[TensorRT-LLM][INFO] TP group is intra-node for rank 5
+[TensorRT-LLM][INFO] TP group is intra-node for rank 2
+[TensorRT-LLM][INFO] TP group is intra-node for rank 6
+[TensorRT-LLM][INFO] TP group is intra-node for rank 7
+[TensorRT-LLM][INFO] TP group is intra-node for rank 3
+2026-05-29 01:59:51,920 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 01:59:51,920 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 01:59:51,920 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 01:59:51,920 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 01:59:51,920 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 01:59:51,920 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 01:59:51,921 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 01:59:51,921 - INFO - flashinfer.jit: Loading JIT ops: norm
+2026-05-29 02:00:05,770 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+2026-05-29 02:00:05,807 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+2026-05-29 02:00:05,859 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+2026-05-29 02:00:05,909 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+2026-05-29 02:00:05,959 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+2026-05-29 02:00:06,011 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+2026-05-29 02:00:06,061 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+2026-05-29 02:00:06,111 - INFO - flashinfer.jit: Finished loading JIT ops: norm
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[05/29/2026-02:00:09] [TRT-LLM] [RANK 0] [I] [Autotuner] Cache size after warmup is 13
+[05/29/2026-02:00:09] [TRT-LLM] [RANK 0] [I] [Autotuner] Autotuning process ends
+[05/29/2026-02:00:09] [TRT-LLM] [RANK 0] [I] Creating CUDA graph instances for 10 batch sizes.
+[05/29/2026-02:00:09] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=10, draft_len=3
+[05/29/2026-02:00:09] [TRT-LLM] [RANK 0] [W] [AutoTunner] Using the fallback tactic, due to cache miss on input shapes=(torch.Size([40, 128]), torch.Size([0]), torch.Size([40, 3072]), torch.Size([3840]), torch.Size([32, 3072, 1536]), torch.Size([32, 3072, 96]), torch.Size([32, 3072]), torch.Size([32]), torch.Size([32]), torch.Size([32]), torch.Size([32, 3072, 768]), torch.Size([32, 3072, 48]), torch.Size([32, 3072]))
+[05/29/2026-02:00:09] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=9, draft_len=3
+[05/29/2026-02:00:10] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=8, draft_len=3
+[05/29/2026-02:00:10] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=7, draft_len=3
+[05/29/2026-02:00:11] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=6, draft_len=3
+[05/29/2026-02:00:12] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=5, draft_len=3
+[05/29/2026-02:00:12] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=4, draft_len=3
+[05/29/2026-02:00:13] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=3, draft_len=3
+[05/29/2026-02:00:13] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=2, draft_len=3
+[05/29/2026-02:00:14] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=1, draft_len=3
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Memory used after loading model weights (inside torch) in memory usage profiling: 10.41 GiB
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Memory used after loading model weights (outside torch) in memory usage profiling: 8.63 GiB
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Memory dynamically allocated during inference (inside torch) in memory usage profiling: 0.55 GiB
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Memory used outside torch (e.g., NCCL and CUDA graphs) in memory usage profiling: 8.68 GiB
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Peak memory during memory usage profiling (torch + non-torch): 19.65 GiB, available KV cache memory when calculating max tokens: 127.02 GiB, fraction is set 0.800000011920929, kv size is 9216. device total memory 178.35 GiB, , tmp kv_mem 0.07 GiB
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Estimated max memory in KV cache : 127.02 GiB
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [W] Both free_gpu_memory_fraction and max_tokens are set (to 0.800000011920929 and 14798698, respectively). The smaller value will be used.
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] max_seq_len=8197, max_num_requests=10, max_num_tokens=8192, max_batch_size=10
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] cache_transceiver is disabled
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] [Autotuner] Autotuning process starts ...
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[TensorRT-LLM][INFO] Number of tokens per block: 32.
+[TensorRT-LLM][INFO] [MemUsageChange] Allocated 127.45 GiB for max tokens in paged KV cache (14448128).
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[TensorRT-LLM][WARNING] Attention workspace size is not enough, increase the size from 0 bytes to 33622272 bytes
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] [Autotuner] Cache size after warmup is 13
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] [Autotuner] Autotuning process ends
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Creating CUDA graph instances for 10 batch sizes.
+[05/29/2026-02:00:15] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=10, draft_len=3
+[05/29/2026-02:00:16] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=9, draft_len=3
+[05/29/2026-02:00:16] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=8, draft_len=3
+[05/29/2026-02:00:17] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=7, draft_len=3
+[05/29/2026-02:00:17] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=6, draft_len=3
+[05/29/2026-02:00:18] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=5, draft_len=3
+[05/29/2026-02:00:18] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=4, draft_len=3
+[05/29/2026-02:00:19] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=3, draft_len=3
+[05/29/2026-02:00:20] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=2, draft_len=3
+[05/29/2026-02:00:20] [TRT-LLM] [RANK 0] [I] Run generation only CUDA graph warmup for batch size=1, draft_len=3
+[05/29/2026-02:00:21] [TRT-LLM] [RANK 0] [I] Setting PyTorch memory fraction to 0.23792719218754704 (42.4345703125 GiB)
+/config/models/gpt-oss-120b
+/config/models/gpt-oss-120b
+INFO:     Started server process [18564]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60948 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45452 - "GET /v1/chat/completions HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:39762 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35730 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42172 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56906 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56916 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56920 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56936 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56944 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56946 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39702 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39704 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39718 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39726 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39738 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39742 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39748 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39764 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39774 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42020 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42022 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42034 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42518 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42528 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42538 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42540 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42552 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42562 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48592 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48602 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48618 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48626 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48642 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48650 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48662 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48668 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48674 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59266 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59274 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59278 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59294 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59318 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59334 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59350 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59362 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59366 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59380 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53664 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53666 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53674 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53690 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53698 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53704 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53712 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53728 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53742 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56314 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56328 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56338 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56346 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56360 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56366 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56382 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56394 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56398 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56400 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56414 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56416 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37200 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37216 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37222 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37224 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37226 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37236 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37250 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37252 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37266 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37058 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37066 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37080 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37084 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37092 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37102 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37106 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37114 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37126 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37140 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37150 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:37154 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40054 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40068 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40084 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40088 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40098 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40102 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40116 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40124 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40140 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40144 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40158 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40164 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47406 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47422 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47424 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47440 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47456 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47460 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47462 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47468 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47474 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47480 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47482 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47498 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35128 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35142 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35144 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35152 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35160 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35174 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35188 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35190 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35196 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35206 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35218 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35230 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46694 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46698 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46710 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46714 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46726 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46730 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46744 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46760 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46772 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46776 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46778 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46790 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41970 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41984 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41992 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42008 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42020 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42024 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42040 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42050 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42060 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42066 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42070 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38574 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38586 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38596 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38610 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38616 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38630 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38640 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38654 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38660 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50658 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50666 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50682 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50690 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50698 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50708 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50710 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50720 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50724 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45740 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45744 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45760 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45772 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45784 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45790 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45796 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45810 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45812 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45824 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55856 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55864 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55868 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55874 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55888 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55890 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55896 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55910 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55918 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55930 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55940 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59066 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59080 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59090 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59094 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59114 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59128 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59156 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59158 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59162 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59174 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53604 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53614 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53630 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53642 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53652 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53668 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53684 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53694 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53698 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59692 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59708 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59722 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59724 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59734 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59736 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59740 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59756 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33432 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33446 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33460 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33476 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33480 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33484 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33490 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52058 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52060 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52076 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52078 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52082 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52096 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52122 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52132 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35102 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35108 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35110 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35112 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35122 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35130 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35144 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35152 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35156 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34792 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34806 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34808 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34824 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34828 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34832 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34844 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49250 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49264 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49268 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49284 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49298 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49324 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59416 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59424 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59438 - "GET /metrics HTTP/1.1" 200 OK
