@@ -36,18 +36,14 @@ MT_BENCH_URL = (
     "fastchat/llm_judge/data/mt_bench/question.jsonl"
 )
 
-ACCEPTED_KEYS = (
-    "accepted_draft_tokens",
-    "acceptedDraftTokens",
-    "total_accepted_draft_tokens",
-    "totalAcceptedDraftTokens",
-)
-TOTAL_KEYS = (
-    "total_draft_tokens",
-    "totalDraftTokens",
-    "num_draft_tokens",
-    "numDraftTokens",
-)
+# TRT-LLM 1.1.0rc2 PyTorch backend doesn't populate specDecodingStats yet
+# (the field is present but null). The reliable signal is
+# inflightBatchingStats.avgNumDecodedTokensPerIter — average decoded tokens
+# per generation iteration. Without spec decoding this is 1.0; with Eagle3
+# + max_draft_len=3 it lands in roughly 2.17-2.83 (matching the HF card).
+#
+# acceptance_rate = (tokens_per_step - 1) / max_draft_len
+MAX_DRAFT_LEN_DEFAULT = 3
 
 
 def load_mtbench():
@@ -90,27 +86,26 @@ def fetch_metrics(base_url: str) -> list[dict]:
     return []
 
 
-def extract_counts(iter_stats: list[dict]) -> tuple[int, int]:
-    """Sum (accepted, total) draft tokens across iter stats, tolerating nesting."""
-    accepted = 0
-    total = 0
+def extract_decode_samples(iter_stats: list[dict]) -> list[float]:
+    """Pull avgNumDecodedTokensPerIter from generation iterations only.
 
-    def walk(obj):
-        nonlocal accepted, total
-        if isinstance(obj, dict):
-            for k, v in obj.items():
-                if k in ACCEPTED_KEYS and isinstance(v, (int, float)):
-                    accepted += int(v)
-                elif k in TOTAL_KEYS and isinstance(v, (int, float)):
-                    total += int(v)
-                else:
-                    walk(v)
-        elif isinstance(obj, list):
-            for x in obj:
-                walk(x)
-
-    walk(iter_stats)
-    return accepted, total
+    A generation iter is one with numGenRequests > 0 (and typically
+    numContextRequests == 0). Context-only iters report 0.0 here and would
+    bias the average down.
+    """
+    samples = []
+    if not isinstance(iter_stats, list):
+        return samples
+    for it in iter_stats:
+        if not isinstance(it, dict):
+            continue
+        ib = it.get("inflightBatchingStats") or {}
+        num_gen = ib.get("numGenRequests", 0)
+        num_ctx = ib.get("numContextRequests", 0)
+        avg = ib.get("avgNumDecodedTokensPerIter")
+        if num_gen and not num_ctx and isinstance(avg, (int, float)) and avg > 0:
+            samples.append(float(avg))
+    return samples
 
 
 def send_chat(base_url: str, model: str, prompt: str, max_tokens: int) -> int:
@@ -137,6 +132,8 @@ def main():
     ap.add_argument("--dump-metrics", action="store_true",
                     help="print one raw /metrics payload and exit")
     ap.add_argument("--output", default="mtbench_acceptance.json")
+    ap.add_argument("--max-draft-len", type=int, default=MAX_DRAFT_LEN_DEFAULT,
+                    help="must match speculative_config.max_draft_len in eagle.yaml")
     args = ap.parse_args()
 
     if args.dump_metrics:
@@ -148,9 +145,8 @@ def main():
         questions = questions[: args.limit]
     print(f"[info] loaded {len(questions)} MT-Bench prompts")
 
-    by_cat = collections.defaultdict(lambda: {"accepted": 0, "total": 0,
-                                              "n": 0, "completion_tokens": 0,
-                                              "per_step_samples": []})
+    by_cat = collections.defaultdict(lambda: {"n": 0, "completion_tokens": 0,
+                                              "decode_samples": []})
 
     for i, q in enumerate(questions, 1):
         fetch_metrics(args.base_url)  # drain
@@ -158,39 +154,36 @@ def main():
         ctoks = send_chat(args.base_url, args.model, q["prompt"], args.max_tokens)
         dt = time.perf_counter() - t0
         stats = fetch_metrics(args.base_url)
-        acc, tot = extract_counts(stats)
-        n_iters = len(stats) if isinstance(stats, list) else 0
+        samples = extract_decode_samples(stats)
 
         cat = q["category"]
         bucket = by_cat[cat]
-        bucket["accepted"] += acc
-        bucket["total"] += tot
         bucket["n"] += 1
         bucket["completion_tokens"] += ctoks
-        if n_iters > 0 and ctoks > 0:
-            # tokens-per-step proxy: completion_tokens / decode iterations
-            bucket["per_step_samples"].append(ctoks / n_iters)
+        bucket["decode_samples"].extend(samples)
 
-        rate = (acc / tot) if tot else float("nan")
+        tps = statistics.mean(samples) if samples else float("nan")
+        rate = (tps - 1.0) / args.max_draft_len if samples else float("nan")
         print(f"[{i:>2}/{len(questions)}] {cat:<12s} "
               f"completion_tok={ctoks:<5d} dt={dt:5.2f}s "
-              f"accepted={acc:<6d} total={tot:<6d} rate={rate:.3f}")
+              f"gen_iters={len(samples):<4d} tok/step={tps:5.3f} "
+              f"accept_rate={rate:.3f}")
 
-    print("\n=== per-category MT-Bench acceptance ===")
-    print(f"{'category':<14s} {'n':>3s} {'rate':>8s} {'tok/step':>10s} "
+    print("\n=== per-category MT-Bench (Eagle3) ===")
+    print(f"{'category':<14s} {'n':>3s} {'tok/step':>10s} {'accept_rate':>12s} "
           f"{'avg_completion':>15s}")
-    summary = {}
+    summary = {"meta": {"max_draft_len": args.max_draft_len,
+                        "formula": "accept_rate = (tok/step - 1) / max_draft_len"}}
     for cat, b in sorted(by_cat.items()):
-        rate = (b["accepted"] / b["total"]) if b["total"] else float("nan")
-        tps = (statistics.mean(b["per_step_samples"])
-               if b["per_step_samples"] else float("nan"))
+        tps = statistics.mean(b["decode_samples"]) if b["decode_samples"] else float("nan")
+        rate = (tps - 1.0) / args.max_draft_len if b["decode_samples"] else float("nan")
         avg_c = b["completion_tokens"] / b["n"] if b["n"] else 0.0
-        print(f"{cat:<14s} {b['n']:>3d} {rate:>8.3f} {tps:>10.3f} {avg_c:>15.1f}")
-        summary[cat] = {"n": b["n"], "acceptance_rate": rate,
+        print(f"{cat:<14s} {b['n']:>3d} {tps:>10.3f} {rate:>12.3f} {avg_c:>15.1f}")
+        summary[cat] = {"n": b["n"],
                         "tokens_per_step": tps,
+                        "acceptance_rate": rate,
                         "avg_completion_tokens": avg_c,
-                        "accepted_draft_tokens": b["accepted"],
-                        "total_draft_tokens": b["total"]}
+                        "n_gen_iters": len(b["decode_samples"])}
 
     with open(args.output, "w") as f:
         json.dump(summary, f, indent=2)
