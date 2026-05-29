@@ -5,7 +5,11 @@ kv_cache_config:
   free_gpu_memory_fraction: 0.8
 
 speculative_config:
-  decoding_type: Eagle3
+  # On the PyTorch backend, `decoding_type: Eagle` is a backward-compatible
+  # alias that runs the Eagle3 algorithm (per TRT-LLM spec-decoding docs).
+  # The literal string "Eagle3" was only added to the enum in >= 1.2.0rc6;
+  # 1.1.0rc2 will reject it. The Eagle3 draft checkpoint still loads correctly.
+  decoding_type: Eagle
   max_draft_len: 3
   speculative_model_dir: /config/models/eagle/
 
